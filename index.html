@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoring</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="script/Winwheel.min.js"></script>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <input class="boton" type="button" value="Girar" onclick = "miRuleta.startAnimation();" />
+        <table>
+            <td class="the_wheel">
+                <canvas id="canvas" height="900" width="900">
+                </canvas>
+            </td>
+        </table>
+    </div>
+
+    <script>
+        var miRuleta = new Winwheel({
+            'numSegments': 26,
+            'outerRadius': 400,
+            'innerRadius': 85,
+            'textFontSize': 15,
+            'lineWidth'   : 1,
+            'textAlignment': 'center',
+            'responsive': true,
+            'segments'    :
+        [
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Eric Gimenez'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mariana Alejandra Diaz'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Daniel Julian Kerman'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Matias Damian Altieri'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Pablo Ignacio Gonzalez Federico'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mauro Oviedo'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Araceli Agustina Bascur'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Barbara Giuliana Calderon'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Eduardo Daniel Aguilar'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mariangeles Luengo'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maximiliano Ezequiel Gomez'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Hector Jesus Prieto'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maria Soledad Riquelme'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Hernan Horacio Pampin'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maria Belen Puglisi'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Gustavo Rodolfo Dick Bicocchi'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Natacha Belen Carrizo'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Jose Miguel Hernandez Perez'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Emanuel Leonardo Garcia'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Serra Maria'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maria Pilar Ortiz'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Celina Grisel Leyes '},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Alejandra Eugenia Pineyro'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Leonardo Miguel Flory'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Juana Gimenez'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Sleiman Olivar'}
+        ],
+        'animation': {
+            'type': 'spinToStop',
+            'duration': 5,
+            'callbackFinished': 'Mensaje()',
+            'callbackAfter': 'dibujarIndicador()'
+            },
+        });
+
+        function Mensaje(){
+            var segmentoSeleccionado = miRuleta.getIndicatedSegment();
+            let SegNumber = miRuleta.getIndicatedSegmentNumber()
+            alert("Elemento seleccionado: " + segmentoSeleccionado.text + "!");
+            //Reinicio de la ruleta(valor inicial)
+            miRuleta.stopAnimation(false);
+            miRuleta.rotationAngle = 0;
+            dibujarIndicador();
+            miRuleta.deleteSegment(SegNumber);
+            miRuleta.draw();
+        }
+
+        function dibujarIndicador(){
+            var ctx = miRuleta.ctx;
+            ctx.strokeStyle = 'navy';
+            ctx.fillStyle = '#ec0000';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(450, 0);
+            ctx.lineTo(500, 0);
+            ctx.lineTo(450, 40);
+            ctx.lineTo(400, 0);
+            ctx.stroke();
+            ctx.fill();
+        }
+        dibujarIndicador();
+
+
+/*         function removeSegment(winSegNumber){
+            var winSegNumber = miRuleta.getIndicatedSegmentNumber();
+            miRuleta.deleteSegment(winSegNumber);
+            miRuleta.draw();
+        } */
+
+        
+
+    </script>
+</body>
+</html>

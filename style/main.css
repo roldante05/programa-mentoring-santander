@@ -1,0 +1,33 @@
+body
+{
+    font-family: arial;
+}
+
+/* Sets the background image for the wheel */
+
+td.the_wheel{
+    background-image: url(/media/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boton{
+    background-color: #ec0000;
+    color: white;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ec0000;
+    border-radius: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* .boton:hover{
+    back
+} */
