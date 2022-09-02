@@ -12,19 +12,19 @@
 <body>
 
     <div class="container">
-        <input class="boton" type="button" value="Girar" onclick = "miRuleta.startAnimation();" />
         <table>
             <td class="the_wheel">
-                <canvas id="canvas" height="900" width="900">
+                <canvas id="canvas" height="550" width="550">
                 </canvas>
             </td>
         </table>
+        <input class="boton" type="button" value="Girar" onclick = "miRuleta.startAnimation();" />
     </div>
 
     <script>
         var miRuleta = new Winwheel({
             'numSegments': 26,
-            'outerRadius': 400,
+            'outerRadius': 250,
             'innerRadius': 85,
             'textFontSize': 15,
             'lineWidth'   : 1,
@@ -33,29 +33,29 @@
             'segments'    :
         [
             {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Eric Gimenez'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mariana Alejandra Diaz'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Daniel Julian Kerman'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Matias Damian Altieri'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Pablo Ignacio Gonzalez Federico'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mariana Diaz'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Daniel Kerman'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Matias Altieri'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Pablo Gonzalez'},
             {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mauro Oviedo'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Araceli Agustina Bascur'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Barbara Giuliana Calderon'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Eduardo Daniel Aguilar'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Araceli Bascur'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Barbara Calderon'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Eduardo Aguilar'},
             {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mariangeles Luengo'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maximiliano Ezequiel Gomez'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maximiliano Gomez'},
             {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Hector Jesus Prieto'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maria Soledad Riquelme'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Hernan Horacio Pampin'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maria Belen Puglisi'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Gustavo Rodolfo Dick Bicocchi'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Natacha Belen Carrizo'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Jose Miguel Hernandez Perez'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Emanuel Leonardo Garcia'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maria Riquelme'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Hernan Pampin'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maria Puglisi'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Gustavo Dick'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Natacha Carrizo'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Jose Hernandez'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Emanuel Garcia'},
             {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Serra Maria'},
             {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maria Pilar Ortiz'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Celina Grisel Leyes '},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Alejandra Eugenia Pineyro'},
-            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Leonardo Miguel Flory'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Celina Leyes '},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Alejandra Pineyro'},
+            {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Leonardo Flory'},
             {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Juana Gimenez'},
             {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Sleiman Olivar'}
         ],
@@ -85,10 +85,10 @@
             ctx.fillStyle = '#ec0000';
             ctx.lineWidth = 2;
             ctx.beginPath();
-            ctx.moveTo(450, 0);
-            ctx.lineTo(500, 0);
-            ctx.lineTo(450, 40);
-            ctx.lineTo(400, 0);
+            ctx.moveTo(275, 0);
+            ctx.lineTo(300, 0);
+            ctx.lineTo(275, 15);
+            ctx.lineTo(250, 0);
             ctx.stroke();
             ctx.fill();
         }
