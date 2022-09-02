@@ -1,0 +1,16 @@
+Para clonar repo copiamos el link del repo en => Code => HTTPS => Link
+
+Vamos a la carpeta donde queremos clonar el repo => Click derecho => Git bash here (Si no aparece, instalar bash)
+
+Colocamos git clone y el link del repo =>
+
+git clone https://github.com/roldante05/programa-mentoring-santander.git
+
+Cuando hagamos cambios, los añadimos al entorno para agregarlos al repositorio => git add . => presionamos enter
+
+Luego comiteamos con algún nombre descriptivo => 
+git commit -m "navAdded"
+
+El -m es para dejar un mensaje en el comit
+
+Para subirlo al repo se usa => git push origin master
