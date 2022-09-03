@@ -1,84 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentoring</title>
-    <link rel="stylesheet" href="style/main.css">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="script/Winwheel.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoring</title>
+  <link rel="stylesheet" href="style/main.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="script/Winwheel.min.js"></script>
 </head>
+
 <body>
-<main>
+  <header class="SeccionHeader">
+    <div><img src="https://www.pescar.org.ar/wp/wp-content/uploads/icono-logo-web-03.png" width="75px" alt=""></div>
+    <nav>
+      <ul class="nav_links">
+        <li>
+          <a href="">Inicio</a>
+        </li>
+        <li>
+          <a href="">Nosotros</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
 
     <!-- Ruleta -->
     <div class="container">
-        <table>
-            <td class="the_wheel">
-                <canvas id="canvas" height="550" width="550">
-                </canvas>
-            </td>
-        </table>
-        <input class="boton" type="button" value="Girar" onclick = "miRuleta.startAnimation();" />
+      <table>
+        <td class="the_wheel">
+          <canvas id="canvas" height="550" width="550">
+          </canvas>
+        </td>
+      </table>
+      <input class="boton" type="button" value="Girar" onclick="miRuleta.startAnimation();" />
     </div>
 
     <!-- cards -->
-    <div class="contenedor">
+    <div class="cartas_box">
+      <section id="modal"></section>
+      <div class="contenedor">
         <div class="cards">
-            <div class="card">
-      
-              <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
-      
-              <div class="trans hide">PREGUNTA</div>
-            </div>
-            <div class="card">
-              <div class="word">        
-              <img src="./media/san-logo.webp" alt=""> </div>
-      
-              <div class="trans hide pregunta_">PREGUNTA</div>
-            </div>
+          <div class="card">
+
+            <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
+
+            <div class="trans hide">¿Cuales creen que son las habilidades interpersonales mas requeridas para ingresar a Santander?</div>
           </div>
-          <div class="cards">
-            <div class="card">     
-                 <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
-      
-      
-              <div class="trans hide">PREGUNTA</div>
+          <div class="card">
+            <div class="word">
+              <img src="./media/san-logo.webp" alt="">
             </div>
-            <div class="card">
-              <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
-      
-      
-              <div class="trans hide">PREGUNTA</div>
-            </div>
-          </div>
-          <div class="cards">
-            <div class="card">
-              <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
-      
-              <div class="trans hide">PREGUNTA</div>
-            </div>
-            <div class="card">
-              <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
-      
-              <div class="trans hide">PREGUNTA</div>
-            </div>
-          </div>
-          <div class="cards">
-            <div class="card">
-              <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
-      
-              <div class="trans hide"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et temporibus quisquam praesentium quos mollitia, accusamus molestiae rem aut doloribus blanditiis a distinctio exercitationem illo amet consectetur dicta! Vitae, eveniet cumque.  </div>
-            </div>
-            <div class="card">
-              <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
-      
-              <div class="trans hide">PREGUNTA</div>
-            </div>
+
+            <div class="trans hide pregunta_">¿Tuviste experiencia como mentor? Si tuviste experiencia, ¿Como fue? y si no, ¿Como esperas que sea?</div>
           </div>
         </div>
-</main>
-<script src="./js/app.js"></script>
+        <div class="cards">
+          <div class="card">
+            <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
+
+
+            <div class="trans hide">¿Cuales son las metodologias de trabajo o tipo de organización que utilizas en tu ambiente laboral?</div>
+          </div>
+          <div class="card">
+            <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
+
+
+            <div class="trans hide">¿Que te motivo a ser voluntario en este programa de mentores?</div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
+
+            <div class="trans hide">¿Cual fue tu mayor desafio laboral y como lo superaste ?</div>
+          </div>
+          <div class="card">
+            <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
+
+            <div class="trans hide">¿Que consejos nos darias para aprovechar el programa al maximo ?</div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
+
+            <div class="trans hide"> ¿Cual es el consejo mas util que has recibido?</div>
+          </div>
+          <div class="card">
+            <div class="word"> <img src="./media/san-logo.webp" alt=""> </div>
+
+            <div class="trans hide">¿Cual es tu aspecto favorito de tu trabajo?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
 </body>
+<script src="./js/app.js"></script>
+
 </html>

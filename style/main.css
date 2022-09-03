@@ -44,7 +44,6 @@ td.the_wheel{
 
 
 .contenedor{
-width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -60,14 +59,21 @@ width: 50%;
 
 /*=== Propiedades para la carta===*/
 
+.cartas_box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
 .card {
 	display: flex;
 	justify-content: center;
     align-items: center;
 	flex-wrap: wrap;
 	background-color: #ffffff;
-	width: 120px;
-	height: 165px;
+	width: 150px;
+	height: 225px;
 	margin: 22px;
 	border-radius: 10px;
 	transition: transform 2s;
@@ -77,8 +83,10 @@ width: 50%;
 }
 
 .trans {
-    
 	transform: rotateY(-180deg);
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .rotator {
@@ -86,11 +94,61 @@ width: 50%;
 }
 
 .hide {
-  
 	display: none;
 }
 
+.show {
+	display: block;
+}
 
+#modal {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: #ec0000;
+    font-size: 2em;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#modal h3 {
+    color: #ffffff;
+}
+
+.SeccionHeader li a{
+    font-size: 16px;
+    color: #ec0000;
+    text-decoration: none;
+}
+
+.SeccionHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f8f8;
+    padding: 0 10%;
+    position: sticky;
+    box-shadow: -6px -1px 30px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: -6px -1px 30px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -6px -1px 30px -8px rgba(0,0,0,0.75);
+}
+
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a{
+    font-size: 1.3rem;
+}
 
 
 

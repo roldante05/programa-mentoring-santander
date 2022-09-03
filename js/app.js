@@ -70,13 +70,23 @@ var miRuleta = new Winwheel({
 function Mensaje(){
     var segmentoSeleccionado = miRuleta.getIndicatedSegment();
     let SegNumber = miRuleta.getIndicatedSegmentNumber()
-    alert("Elemento seleccionado: " + segmentoSeleccionado.text + "!");
+    // alert("Elemento seleccionado: " + segmentoSeleccionado.text + "!");
+    mostrarNombre(segmentoSeleccionado.text)
     //Reinicio de la ruleta(valor inicial)
     miRuleta.stopAnimation(false);
     miRuleta.rotationAngle = 0;
     dibujarIndicador();
     miRuleta.deleteSegment(SegNumber);
     miRuleta.draw();
+}
+
+let modal = document.getElementById('modal')
+modal.className = 'hide'
+
+let mostrarNombre = (texto) => {
+    modal.innerHTML = `<h3>La persona elegida fue:</h3>
+    <p>¡${texto}!</p>`
+    modal.className = 'show'
 }
 
 function dibujarIndicador(){
