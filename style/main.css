@@ -1,8 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body
 {
     font-family: arial;
 }
-
+main{
+    height: 620px;
+    display: flex;
+    justify-content: space-between;
+}
 /* Sets the background image for the wheel */
 
 td.the_wheel{
@@ -12,6 +20,9 @@ td.the_wheel{
 }
 
 .container{
+    background-color: #ffffff;
+    height: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -28,6 +39,60 @@ td.the_wheel{
     font-size: 20px;
     font-weight: bold;
 }
+
+/*= Contenedor=*/
+
+
+.contenedor{
+width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/*= Estilos de la imagen logo=*/
+
+.word img{
+    width: 4.5rem;
+    height: 4rem;
+}
+
+/*=== Propiedades para la carta===*/
+
+.card {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	width: 120px;
+	height: 165px;
+	margin: 22px;
+	border-radius: 10px;
+	transition: transform 2s;
+    box-shadow: -6px -1px 45px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: -6px -1px 45px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -6px -1px 45px -8px rgba(0,0,0,0.75);
+}
+
+.trans {
+    
+	transform: rotateY(-180deg);
+}
+
+.rotator {
+	transform: rotateY(180deg);
+}
+
+.hide {
+  
+	display: none;
+}
+
+
+
+
 
 /* .boton:hover{
     back
