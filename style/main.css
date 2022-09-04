@@ -9,17 +9,19 @@ main {
   height: 620px;
   display: flex;
   justify-content: space-between;
+  background-image: url(../media/fondo-nosotros.png);
+  background-size: cover;
 }
 /* Sets the background image for the wheel */
 
 td.the_wheel {
-  background-image: url(../media/background.png);
+  background-image: url(../media/background-santander);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .container {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   height: 100%;
   width: 50%;
   display: flex;
@@ -150,3 +152,4 @@ td.the_wheel {
 /* .boton:hover{
     back
 } */
+

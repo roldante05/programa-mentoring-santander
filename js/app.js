@@ -162,7 +162,7 @@ function flipCard() {
 
 function rem() {
     cd.style
-    cd.remove();
+    // cd.remove();
     cur_num -= 1;
 }
 
