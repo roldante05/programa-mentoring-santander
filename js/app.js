@@ -162,6 +162,8 @@ function flipCard() {
 
 function rem() {
     cd.style
+    // cd.remove();
+    cur_num -= 1;
 }
 
 cd.addEventListener("click", flipCard);

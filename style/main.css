@@ -9,17 +9,22 @@ main {
   height: 620px;
   display: flex;
   justify-content: space-between;
+  background-image: url(../media/fondo-nosotros.png);
+  background-size: cover;
 }
 /* Sets the background image for the wheel */
 
 td.the_wheel {
-  background-image: url(../media/background.png);
+  background-image: url(../media/background-santander);
   background-position: center;
   background-repeat: no-repeat;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 300px;
+  padding: 0px;
 }
 
 .container {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   height: 100%;
   width: 50%;
   display: flex;
@@ -29,6 +34,8 @@ td.the_wheel {
 }
 
 .boton {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
   background-color: #ec0000;
   color: white;
   width: 100px;
@@ -99,7 +106,7 @@ td.the_wheel {
 }
 
 #modal {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   text-align: center;
   background-color: #ec0000;
@@ -150,3 +157,4 @@ td.the_wheel {
 /* .boton:hover{
     back
 } */
+
