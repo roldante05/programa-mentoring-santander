@@ -14,6 +14,11 @@ main {
 }
 /* Sets the background image for the wheel */
 
+.divNavContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 td.the_wheel {
   background-image: url(../media/background-santander);
   background-position: center;
