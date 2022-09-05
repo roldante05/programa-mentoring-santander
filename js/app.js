@@ -122,8 +122,8 @@ let cds = document.getElementsByClassName("card");
 
 let cur_num = 0;
 
-document.oncontextmenu = function() {
-return false;
+document.oncontextmenu = function() { //Desactiva el inspeccionar elemento en navegador.
+return true;
 }
 
 /*
@@ -162,8 +162,6 @@ function flipCard() {
 
 function rem() {
     cd.style
-    cd.remove();
-    cur_num -= 1;
 }
 
 cd.addEventListener("click", flipCard);
