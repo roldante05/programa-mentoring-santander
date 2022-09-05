@@ -53,7 +53,7 @@ const alumnos = [{
   for (i = 0; i < alumnos.length; i++) {
     document.querySelector(
       "#carta"
-    ).innerHTML += `<div class='ejem col col-sm-4 mb-4' ><div class='card shadow'  ><img src=media/${alumnos[i].imagen} class='card-img-top' alt='...'><div class='card-body'> <h5 class='card-title'>${alumnos[i].nombre} </h5><p class='card-text'>${alumnos[i].descripcion} </p><a target='_blank' href='${alumnos[i].url} ' class='btn btn-primary'>Linkedin</a></div></div></div>`;
+    ).innerHTML += `<div class='ejem col col-sm-4 mb-4' ><div class='card shadow'  ><img src=media/${alumnos[i].imagen} class='card-img-top' alt='...'><div class='card-body'> <h5 class='card-title'>${alumnos[i].nombre} </h5><p class='card-text'>${alumnos[i].descripcion} </p><a target='_blank' href='${alumnos[i].url} ' class='btn btn'>Linkedin</a></div></div></div>`;
   }
   
   

@@ -61,6 +61,17 @@ td.the_wheel {
   height: 4rem;
 }
 
+.word span{
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ec0000;
+  border-radius: 70%;
+  padding-top: 10px;
+  border-bottom: 5px solid rgba(236, 0, 0, 0.4);
+}
+
 /*=== Propiedades para la carta===*/
 
 .cartas_box {
