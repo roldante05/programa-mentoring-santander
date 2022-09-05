@@ -36,8 +36,8 @@ td.the_wheel {
 .boton {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-  background-color: #ec0000;
-  color: white;
+  background-color: #ffffff;
+  color: red;
   width: 100px;
   height: 35px;
   border: 1px solid #ec0000;
@@ -103,20 +103,24 @@ td.the_wheel {
 
 .show {
   display: block;
+  font-family: 'Ubuntu', sans-serif;
+  color: #ec0000;
 }
 
 #modal {
   /* width: 100%; */
   height: auto;
   text-align: center;
-  background-color: #ec0000;
+  background-color: #ffffff;
   font-size: 2em;
   border-radius: 50px;
+  border: red 5px solid;
   padding: 10px;
 }
 
 #modal h3 {
-  color: #ffffff;
+  color: #ec0000;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .SeccionHeader li a {
