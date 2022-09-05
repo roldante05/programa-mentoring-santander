@@ -78,7 +78,7 @@ td.the_wheel {
   background-color: #ffffff;
   width: 150px;
   height: 225px;
-  margin: 22px;
+  margin: 10px 10px 20px 10px;
   border-radius: 10px;
   transition: transform 2s;
   box-shadow: -6px -1px 45px -8px rgba(0, 0, 0, 0.75);
