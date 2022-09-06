@@ -62,9 +62,22 @@ var miRuleta = new Winwheel({
     'type': 'spinToStop',
     'duration': 5,
     'callbackFinished': 'Mensaje()',
-    'callbackAfter': 'dibujarIndicador()'
+    'callbackAfter': 'dibujarIndicador()',
+    'callbackSound': playSound,
     },
 });
+
+let audio = new Audio('tick.mp3');
+
+function playSound()
+            {
+                // Stop and rewind the sound if it already happens to be playing.
+                audio.pause();
+                audio.currentTime = 0;
+
+                // Play the sound.
+                audio.play();
+            }
 
 function Mensaje(){
     var segmentoSeleccionado = miRuleta.getIndicatedSegment();
