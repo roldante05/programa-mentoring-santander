@@ -10,7 +10,7 @@ const alumnos = [{
     url:"https://www.linkedin.com/in/urielmilgron/'",
     imagen:"uriel.jfif"
   },{
-    nombre:"Angeles Maldonado",
+    nombre:"Ángeles Maldonado",
     descripcion: "Tutora de Desarollo Web| HTML | CSS | JS | Bootstrap | SASS | GIT",
     url:"https://www.linkedin.com/in/maria-de-los-angeles-maldonado/",
     imagen:"angeles.jpeg"
@@ -20,12 +20,12 @@ const alumnos = [{
     url:"https://www.linkedin.com/in/leonel-montiel/",
     imagen:"leonel.jfif"
   },{
-    nombre:"Dante Roldan",
+    nombre:"Dante Roldán",
     descripcion: "Estudiante de Desarrollo Web Full Stack | PHP | HTML | CSS | Javascript | Bootstrap",
     url:"'https://www.linkedin.com/in/danteroldan/",
     imagen:"dante.jfif"
   },{
-    nombre:"Romina Gonzalez",
+    nombre:"Romina González",
     descripcion: "Desarrolladora Web Full Stack HTML | CSS | Bootstrap | JavaScript | React | NodeJS",
     url:"https://www.linkedin.com/in/romina-solange-gonzalez-/",
     imagen:"romina.jpeg"
@@ -35,7 +35,7 @@ const alumnos = [{
     url:"https://www.linkedin.com/in/lucas-paz-4a9a26234/",
     imagen:"lucas.jfif"
   },{
-    nombre:"Nicolas Pini",
+    nombre:"Nicolás Pini",
     descripcion: "Estudiante de Programación Web FullStack",
     url:"https://www.linkedin.com/in/nicol%C3%A1s-pini-a0b8b120a/",
     imagen:"nicolas.jfif"
@@ -45,6 +45,7 @@ const alumnos = [{
     url:"https://www.linkedin.com/in/gabriel-ale-velasco/",
     imagen:"gabriel.jfif"
   },
+  
     
   ];
   

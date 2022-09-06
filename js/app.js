@@ -40,7 +40,7 @@ var miRuleta = new Winwheel({
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mauro Oviedo'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Araceli Bascur'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Bárbara Calderon'},
-    {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Eduardo Águilar'},
+    {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Eduardo Aguilar'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'María Ángeles Luengo'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Maximiliano Gómez'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Héctor Jesús Prieto'},
