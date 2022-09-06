@@ -23,7 +23,7 @@
 // .catch(err => console.log(err) )
 
 var miRuleta = new Winwheel({
-    'numSegments': 26,
+    'numSegments': 25,
     'outerRadius': 250,
     'innerRadius': 85,
     'textFontSize': 15,
@@ -36,7 +36,6 @@ var miRuleta = new Winwheel({
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mariana Díaz'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Daniel Kerman'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Matías Altieri'},
-    {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Pablo González'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Mauro Oviedo'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Araceli Bascur'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Bárbara Calderon'},
