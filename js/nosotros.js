@@ -3,7 +3,7 @@ const alumnos = [{
     nombre:"Aaron " + "<br>" + " Montivero",
     descripcion: "Estudiante de Desarrollo Web Full Stack  | HTML | CSS | JS | C",
     url:"https://www.linkedin.com/in/aaron-luciano-montivero/",
-    imagen:"aaron.jpg"
+    imagen:"aaron.png"
   },{
     nombre:"Uriel " + "<br>" + " Milgron",
     descripcion: "Desarrollador frontend | Frontend | HTML | CSS | Javascript | ReactJS",
@@ -165,7 +165,7 @@ const alumnos = [{
   for (i = 0; i < alumnos.length; i++) {
     document.querySelector(
       "#carta"
-    ).innerHTML += `<div class='ejem col-12 col-sm-4 mb-4' ><div class='card shadow'  ><img src=media/${alumnos[i].imagen} class=' card-img-top rounded-circle' alt='...'><div class='card-body'> <h5 class='card-title'>${alumnos[i].nombre} </h5><a target='_blank' href='${alumnos[i].url} ' class='btn btn'>Linkedin</a></div></div></div>`;
+    ).innerHTML += `<div class='ejem col-12 col-sm-4 mb-4' ><div class='card shadow'  ><img src=media/${alumnos[i].imagen} class=' card-img-top rounded-circle' alt='...'><div class='card-body'> <h5 class='card-title'>${alumnos[i].nombre} </h5><a target='_blank' href='${alumnos[i].url} ' class='btn btn'>Linkedin</a></div>  </div></div>`;
   }
   
   // <p class='card-text'> </p>
