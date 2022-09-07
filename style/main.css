@@ -6,7 +6,7 @@ body {
   font-family: arial;
 }
 main {
-  height: 620px;
+  height: 680px;
   display: flex;
   justify-content: space-between;
   background-image: url(../media/fondo-nosotros.png);
@@ -29,13 +29,12 @@ td.the_wheel {
 }
 
 .container {
-  /* background-color: #ffffff; */
   height: 100%;
   width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .boton {

@@ -24,7 +24,7 @@
 
 var miRuleta = new Winwheel({
     'numSegments': 25,
-    'outerRadius': 250,
+    'outerRadius': 270,
     'innerRadius': 85,
     'textFontSize': 15,
     'lineWidth'   : 1,
@@ -52,7 +52,7 @@ var miRuleta = new Winwheel({
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Emanuel García'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Serra María'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'María Pilar Ortiz'},
-    {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Celina Leyes'},
+    {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Ivana Mansuetti'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Alejandra Piñeyro'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ec0000', 'fillStyle' : '#ffffff', 'text' : 'Leonardo Flory'},
     {'strokeStyle' : '#ffffff', 'textFillStyle' : '#ffffff', 'fillStyle' : '#ec0000', 'text' : 'Juana Giménez'},
