@@ -118,12 +118,6 @@ function dibujarIndicador(){
 dibujarIndicador();
 
 
-/*         function removeSegment(winSegNumber){
-    var winSegNumber = miRuleta.getIndicatedSegmentNumber();
-    miRuleta.deleteSegment(winSegNumber);
-    miRuleta.draw();
-} */
-
 //Cards
 //Retraso para la animación adecuada.
 
@@ -175,7 +169,6 @@ function flipCard() {
 
 function rem() {
     cd.style
-    // cd.remove();
     cur_num -= 1;
 }
 
