@@ -130,7 +130,7 @@ let cds = document.getElementsByClassName("card");
 let cur_num = 0;
 
 document.oncontextmenu = function() { //Desactiva el inspeccionar elemento en navegador.
-return true;
+return false;
 }
 
 /*

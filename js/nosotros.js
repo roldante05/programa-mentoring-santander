@@ -155,7 +155,9 @@ const alumnos = [{
   },
   
 
-  
+  document.oncontextmenu = function() { //Desactiva el inspeccionar elemento en navegador.
+return false;
+}
   
     
   ];
