@@ -155,13 +155,13 @@ const alumnos = [{
   },
   
 
-  document.oncontextmenu = function() { //Desactiva el inspeccionar elemento en navegador.
-return false;
-}
+
   
     
   ];
-  
+    document.oncontextmenu = function() { //Desactiva el inspeccionar elemento en navegador.
+return false;
+}
   
   
   for (i = 0; i < alumnos.length; i++) {
